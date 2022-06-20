@@ -1,0 +1,154 @@
+@use "../custom" as *;
+
+// .training-app {
+//   @include media-breakpoint-down(md) {
+//     padding: 0;
+//     height: 200vh;
+//   }
+//   background-color: $light-gray;
+//   transform: rotate(5deg);
+//   position: relative;
+//   top: -4rem;
+//   left: -5rem;
+//   width: 120vw;
+//   height: 130vh;
+//   padding: 0 140px;
+//   padding-top: 100px;
+//   .row {
+//     @include media-breakpoint-down(md) {
+//       height: auto;
+//     }
+//     position: relative;
+//     left: 5rem;
+//     height: 75vh;
+//     transform: rotate(-5deg);
+
+//     .col-sm-6 {
+//       @include media-breakpoint-down(md) {
+//         width: 100vw;
+//       }
+//       color: $white;
+//       @include media-breakpoint-down(sm) {
+//         .card {
+//           padding: 2rem 0rem;
+//         }
+//       }
+
+//       p {
+//         font-size: 40px;
+//         color: $white;
+//       }
+//       .achievment-app {
+//         padding: 2rem 0 1.2rem 0;
+//         img {
+//           padding-bottom: 16px;
+//         }
+//         span {
+//           padding: 0 5px 0 5px;
+//         }
+//       }
+//       .tainging-app-img {
+//         width: 400px !important;
+//       }
+//       .tainging-app-img {
+//         @include media-breakpoint-down(md) {
+//           top: 0rem;
+//         }
+//         position: relative;
+//         top: -17rem;
+//       }
+//     }
+//   }
+//   .custom-training {
+//     @include media-breakpoint-down(sm) {
+//       top: -18rem;
+//     }
+//     position: relative;
+//     left: 8rem;
+//     top: -5rem;
+//     img {
+//       margin-top: 1.8rem;
+//       width: 239px;
+//       height: 330px;
+//     }
+
+//     .custom-training-img-group {
+//       display: flex;
+//     }
+//     .card {
+//       @include media-breakpoint-down(md) {
+//         // padding-top: 3rem;
+//         // width: 80vw;
+//         // position: static;
+//       }
+//       transform: rotate(0);
+//       width: 70%;
+//     }
+//   }
+// }
+
+.training-app {
+  background-color: $light-gray;
+  transform: rotate(5deg);
+  position: relative;
+  width: 120vw;
+  left: -5rem;
+  top: -5rem;
+
+  .training-app-inside {
+    transform: rotate(-5deg);
+    position: absolute;
+    // left: 3rem;
+    left: 0rem;
+    .card {
+      left: 5rem;
+    }
+  }
+
+  .training-app-img {
+    position: relative;
+    top: -10rem;
+    right: -20rem;
+  }
+}
+
+.custom-training {
+  height: 62vh;
+  .custom-training-img-group {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  
+
+    width: 50%;
+    z-index: 1000;
+    img {
+      left: 4rem;
+      position: absolute;
+      margin-top: 11rem;
+      &:hover {
+        z-index: 1;
+        width: (290px * 1.3);
+        transition: 0.3s;
+      }
+    }
+    .custom-traing--img-1 {
+      z-index: -3;
+      left: calc(10rem * 1.2);
+      width: (250px * 1.3);
+      transform: translateY(-50%);
+    }
+    .custom-traing--img-2 {
+      z-index: -2;
+      left: calc(15rem * 1.2);
+      width: (270px * 1.3);
+      transform: translateY(-50%);
+    }
+    .custom-traing--img-3 {
+      z-index: -1;
+      left: calc(20rem * 1.2);
+      width: (290px * 1.3);
+      transform: translateY(-50%);
+    }
+  }
+}

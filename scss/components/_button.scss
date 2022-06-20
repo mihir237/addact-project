@@ -1,0 +1,49 @@
+@use "../custom" as *;
+
+.btn-rounded {
+  border-radius: 3px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  font-size: 17px;
+  &:hover {
+    color: $white ;
+    background-color: blue;
+  }
+}
+
+.btn-rounded-active {
+  background-color: blue;
+
+}
+
+.large-btn-active {
+  @include media-breakpoint-down(sm) {
+    font-size: 17px;
+    padding: 0.3rem 3rem;
+  }
+  color: $white !important;
+  background-color: $active-btn;
+  padding: 21px 104px;
+  font-size: 17px;
+  // margin-top: 3rem !important;
+}
+
+.large-btn-light-active {
+  margin-top: 2rem;
+  background-color: $white;
+  color: $dark-gray !important;
+  &:hover {
+    color: $white !important;
+  }
+}
+
+.large-btn-light-secoundary{
+  background-color: transparent;
+  border:1px solid $white;
+  &:hover{
+    background-color: $white;
+
+    color: $dark-gray !important;
+  }
+}

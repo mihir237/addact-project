@@ -1,0 +1,19 @@
+@use "../custom" as *;
+
+.gear {
+  background-color: $white;
+  padding-bottom: 8rem;
+  
+  .row {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        background-color: $white !important;
+        border-radius: 0%;
+        padding: 10px;
+       
+    }
+  }
+}

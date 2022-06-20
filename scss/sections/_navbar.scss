@@ -1,0 +1,31 @@
+@use "../custom" as *;
+
+.menu {
+  padding:26px 0 !important;
+  a {
+    @include media-breakpoint-down(sm){
+      padding: 0.5rem !important;
+      font-size: 1.2rem ;
+    }
+    text-align: left;
+    padding:0 20px !important;
+    letter-spacing: -0.23px;
+    color: $nav-text;
+    opacity: 1;
+
+  }
+  .navbar-btn{
+    @include media-breakpoint-down(sm){
+      button{
+        margin:1rem 0 5px 0rem !important;
+        width: 50%;
+        text-align: center;
+        ;
+      }
+      a{
+        border: none !important;
+      }
+    }
+    }
+
+}

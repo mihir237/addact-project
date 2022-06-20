@@ -1,0 +1,24 @@
+@use "../custom" as *;
+
+.footer {
+  margin-top: 2rem;
+  .play-store-badge {
+    margin-right: 1rem !important;
+  }
+  p{
+    font-size: 1rem;
+  }
+
+  h3 {
+    color: $white;
+  }
+  .nav-link {
+    padding: 0 !important;
+  }
+  .footer--list {
+    @include media-breakpoint-down(md) {
+      padding-top: 3rem;
+      width: 100% !important;
+    }
+  }
+}

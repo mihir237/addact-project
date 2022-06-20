@@ -1,0 +1,21 @@
+@use "../custom" as *;
+
+.support {
+  background-color: $white;
+
+  h1 {
+    padding: 133px 0 66px 0;
+    width: 25%;
+  }
+  @include media-breakpoint-down(md) {
+    .carousel--full {
+      display: none;
+    }
+    .carousel--sm {
+      display: block!important;
+    }
+  }
+  .carousel--sm {
+    display: none;
+  }
+}

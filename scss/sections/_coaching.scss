@@ -1,0 +1,25 @@
+@use "../custom" as *;
+
+.coaching {
+
+  background-image: url("../../images/coaching-bg.png");
+  background-size: cover;
+ 
+  .card-body {
+    margin-top: 2rem;
+    border-radius: 4px;
+    background-color: $white;
+
+    .card-title {
+      padding-top: 4rem;
+    }
+    h5{
+      font-weight: bold;
+      letter-spacing: 0.12px;
+    }
+    ul{
+        padding-top: 1.2rem;
+        color:$p-dark;
+    }
+  }
+}

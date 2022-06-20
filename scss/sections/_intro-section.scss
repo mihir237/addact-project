@@ -1,0 +1,46 @@
+@use "../custom" as *;
+
+// .intro {
+//   height: 100vh;
+//   width: 100vw;
+//   background-image: url("/images/intro.png");
+//   background-size: cover;
+//   background-position: center;
+//   z-index: 0 !important;
+//   .card {
+//     @include media-breakpoint-down(sm) {
+//       padding-top: 10rem !important;
+
+//     }
+//     @include media-breakpoint-down(md) {
+//       padding-top: 5rem;
+//       width: 100vw;
+//       position: static;
+//     }
+//     position: absolute;
+//     top: 15rem;
+//     left: 7rem;
+//     width: 55vw;
+//     border: none;
+//     color: $white !important;
+
+//     .card-title {
+//       font-weight: 700;
+//     }
+//     .card-text {
+//       @include media-breakpoint-down(sm) {
+//         font-size: 1rem;
+//       }
+//       margin-top: 1rem;
+//       font-size: 1.375rem;
+//       color: #e8e8e8 !important;
+//     }
+//   }
+// }
+
+.intro-section{
+  background-image: url(../../images/intro.png);
+  background-size:cover ;
+  background-position: center;
+  
+}

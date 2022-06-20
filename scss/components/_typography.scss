@@ -1,0 +1,138 @@
+@use "../custom" as *;
+
+
+
+
+h2 {
+  font-size: 40px;
+  padding: 133px 0 66px 0;
+  width: 33%;
+  
+}
+
+
+
+p {
+  font-size: 22px;
+  color: $p-light;
+}
+
+h1,h5,
+button,li,p,svg,img,body {
+  font-family: "Questrial", sans-serif;
+}
+
+.h2--light{
+  color: $white !important;
+}
+
+.card {
+  @include media-breakpoint-down(sm) {
+    width: 70vh !important;
+  }
+  h1 {
+    @include media-breakpoint-down(sm) {
+    }
+
+    font-size: 49px;
+    // font-weight: 800;
+    color: $white;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    font-family: 'Questrial', sans-serif;
+
+  }
+}
+
+//////////////////
+.display-1 {
+  @include media-breakpoint-down(sm) {
+    width: 70vh !important;
+  }
+  width: 800px;
+  &--intro {
+    font-size: 49px;
+    font-weight: 800;
+    color: $white;
+    margin-bottom: 1rem;
+  }
+  &--description {
+    color: $p-light-intro;
+    margin-bottom: 2rem;
+  }
+}
+
+.display-2 {
+  @include media-breakpoint-down(md) {
+    background-image: url(../../images/taingin-app-blur.png);
+  }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  .card {
+    left: 5rem;
+  }
+  &--intro {
+    @include media-breakpoint-down(md) {
+      width: 60vh !important;
+    }
+    width: 80vh;
+  }
+  &--description {
+    @include media-breakpoint-down(md) {
+      width: 60vh !important;
+    }
+    width: 80vh;
+  }
+  &--custom {
+    background-image: none !important;
+  }
+}
+
+.h1-dark {
+  @include media-breakpoint-down(sm) {
+    width: 80% !important;
+  }
+  color: $black !important;
+}
+.center {
+  margin-left: 50%;
+  transform: translatex(-50%);
+  //   padding:  133px 0;
+}
+.h5-gear {
+  font-size: 31px;
+  color: $white;
+  padding-top: 104px;
+  padding-left: 26px;
+  font-weight: 800;
+}
+
+// link text colr and hover effect
+.nav-link {
+  color: #707070 !important;
+  text-align: left;
+  padding: 0 20px !important;
+  // font: normal normal medium 15px/18px SF Display;
+  letter-spacing: -0.23px;
+  color: #707070;
+  opacity: 1;
+  &:hover {
+    color: white !important;
+  }
+}
+
+.achievment-app-text--light {
+  letter-spacing: -0.95px;
+  color: #b3b3b3;
+}
+
+.achievment-app-text--dark {
+  font-size: 19px !important;
+  letter-spacing: -0.95px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0 0.8rem !important;
+}

@@ -1,0 +1,40 @@
+@use "../custom" as *;
+
+.nutririon-app{
+    @include media-breakpoint-down(md) {
+        padding: 0 40px;
+    }
+    @include media-breakpoint-down(md) {
+    
+        height: 120vh;
+    }
+    background-color: $white !important;
+  
+    padding: 0 140px;
+    height: 100vh;
+    p{
+        color:$p-dark;
+    }
+    h1{
+        color: $black;
+    }
+    .card {
+        @include media-breakpoint-down(md) {
+          padding-top: 3rem;
+          width: 80vw;
+        //   position: static;
+        }
+        
+        padding-top: 100px;
+        border: none;
+        color: #8D8D8D !important;
+        z-index: 10 !important;
+    
+        
+    }
+    .col-sm-6{
+        padding-top: 5.5rem;
+        
+    }
+   
+}

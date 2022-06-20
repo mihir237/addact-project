@@ -1,0 +1,27 @@
+@use "custom";
+
+//import components
+
+@use "components/button";
+@use "components/animataion";
+@use "components/mixins";
+@use "components/typography";
+
+// import section
+
+@use "sections/navbar";
+@use "sections/intro-section";
+@use "sections/trainig-app";
+@use "sections/nutrition-app";
+@use "sections/coaching";
+@use "sections/support";
+@use "sections/blog";
+@use "sections/gear";
+@use "sections/footer";
+
+
+
+body{
+    overflow-x: hidden !important;
+}
+
